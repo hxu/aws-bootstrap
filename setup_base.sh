@@ -18,5 +18,6 @@ sudo reboot
 curl -s https://get.docker.io/ubuntu/ | sudo sh
 
 # Modify /etc/default/docker and add the following line:
-# DOCKER_OPTS = "-g /home/ubuntu/src/dockers"
+sudo echo 'DOCKER_OPTS = "-g /home/ubuntu/src/dockers"' >> /etc/default/docker
 # Then restart the service
+sudo service docker restart

@@ -2,7 +2,7 @@ FROM ubuntu:12.04
 MAINTAINER Han Xu
 
 RUN sudo apt-get update
-RUN sudo apt-get install -y python-pip curl vim git
+RUN sudo apt-get install -y python-pip curl vim git htop
 RUN sudo pip install virtualenv virtualenvwrapper
 
 # Base directory for our working environment
