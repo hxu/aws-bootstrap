@@ -86,7 +86,7 @@ c.NotebookApp.certfile = u'/mycert.pem'
 # configuration (through profiles), history storage, etc. The default is usually
 # $HOME/.ipython. This options can also be specified through the environment
 # variable IPYTHONDIR.
-c.NotebookApp.ipython_dir = u'/ipython'
+# c.NotebookApp.ipython_dir = u'/ipython'
 
 # Set the log level by value or name.
 # c.NotebookApp.log_level = 30
