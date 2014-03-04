@@ -1,4 +1,4 @@
-# Base Dockerfile for Scientific Python
+# Dockerfile for 
 
 FROM ubuntu:12.04
 MAINTAINER Han Xu
