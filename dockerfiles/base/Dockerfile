@@ -9,4 +9,4 @@ RUN sudo pip install virtualenv virtualenvwrapper
 RUN sudo mkdir /src
 
 # Add the .bashrc
-ADD ../.bashrc /.bashrc
+ADD .bashrc /.bashrc
