@@ -3,7 +3,7 @@
 # Ensure that python, virtualenv, and docker are installed
 
 sudo apt-get update
-sudo apt-get install python-pip -y
+sudo apt-get install python-pip git -y
 
 # sudo pip install virtualenv virtualenvwrapper
 # Since we'll be running dockers,
