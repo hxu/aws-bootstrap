@@ -16,7 +16,11 @@ RUN sudo apt-get install -y python-dev
 RUN sudo apt-get install -y libtiff4-dev libjpeg8-dev zlib1g-dev libfreetype6-dev liblcms1-dev libwebp-dev tcl8.5-dev tk8.5-dev libpng12-dev libatlas-base-dev
 RUN sudo apt-get install -y python-numpy python-scipy python-matplotlib ipython ipython-notebook python-pandas python-sympy python-nose
 
-# Make a default virtaulenv
+# Make a default virtualenv
 RUN virtualenv /src/.virtualenvs/base
+
+# Install the packages into the virtualenv
+RUN /src/.virtualenvs/base/bin/pip install Pillow ipdb numpy python-dateutil ipython[all] cython
+RUN /src/.virtualenvs/base/bin/pip install scipy scikit-image scikit-learn pandas
 
 CMD /bin/bash
