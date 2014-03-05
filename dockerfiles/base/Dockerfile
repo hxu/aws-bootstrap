@@ -27,6 +27,6 @@ RUN /src/.virtualenvs/base/bin/pip install scipy scikit-image scikit-learn panda
 
 # Copy in the config files
 ADD ipython_notebook_config.py /.config/ipython/profile_default/ipython_notebook_config.py
-ADD mycert.pem /.config/ipython/profile_default/mycert.pem
+ADD mycert.pem /mycert.pem
 
 CMD /bin/bash
