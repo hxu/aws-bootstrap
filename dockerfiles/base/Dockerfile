@@ -23,7 +23,7 @@ RUN virtualenv /src/.virtualenvs/base
 
 # Install the packages into the virtualenv
 RUN /src/.virtualenvs/base/bin/pip install Pillow ipdb numpy python-dateutil ipython[all] cython
-RUN /src/.virtualenvs/base/bin/pip install scipy scikit-image scikit-learn pandas
+RUN /src/.virtualenvs/base/bin/pip install scipy scikit-image scikit-learn pandas matplotlib
 
 # Copy in the config files
 ADD ipython_notebook_config.py /.config/ipython/profile_default/ipython_notebook_config.py
